@@ -211,11 +211,11 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(44, 62, 80, 0.95);
-  border-radius: 12px;
+  border-radius: 0 12px 12px 0; /* Ajustado para a animação lateral */
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  animation: slideDown 0.3s ease;
-  z-index: 1002;
+  animation: slideInFromRight 0.4s ease; /* Nova animação */
+  z-index: 1002; /* Mantém sobre outros elementos */
   min-width: 200px;
   max-height: 250px; /* Altura máxima antes de mostrar a barra de rolagem */
   overflow-y: auto; /* Adiciona a barra de rolagem vertical quando necessário */
@@ -258,6 +258,17 @@ h1 {
   background-color: var(--primary-color);
   color: var(--white-color);
   transform: translateX(4px);
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideDown {
@@ -1431,25 +1442,32 @@ h1 {
     justify-content: center;
   }
 
+  /* Tamanho dos ícones das marcas em telas menores */
   .botao-marca-horizontal {
-    width: 80px;
-    height: 100px;
-    padding: 8px;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
   }
 
   .logo-marca {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0; /* Removido o espaçamento inferior */
   }
 
   .nome-marca {
-    font-size: 10px;
+    display: none; /* Oculta o nome da marca para economizar espaço */
   }
 
   .submenu-marca-horizontal {
     min-width: 180px;
     padding: 12px;
-    top: 110px;
+    /* Ajuste para o submenu aparecer ao lado do ícone */
+    top: 0;
+    left: 100%;
+    transform: translateX(10px); /* Pequeno espaço do ícone */
+    animation: slideInFromRight 0.4s ease;
+    border-radius: 0 12px 12px 0;
   }
 
   /* Ajustes gerais para mobile */

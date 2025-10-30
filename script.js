@@ -731,7 +731,8 @@ let produtos = [
       "https://imgnike-a.akamaihd.net/360x360/02994451A1.jpg",
       "https://imgnike-a.akamaihd.net/360x360/029944IEA1.jpg",
     ],
-    descricao: "Esta Windrunner é fabricada em tecido microripstop leve, mas resistente. Os ombros caídos e o espaço extra no corpo garantem um caimento folgado que pode ser ajustado com os elásticos na bainha.",
+    descricao:
+      "Esta Windrunner é fabricada em tecido microripstop leve, mas resistente. Os ombros caídos e o espaço extra no corpo garantem um caimento folgado que pode ser ajustado com os elásticos na bainha.",
     tamanhos: ["P", "M", "G", "GG"],
     cores: [
       {
@@ -756,7 +757,7 @@ let produtos = [
       },
     ],
   },
- {
+  {
     id: 28,
     nome: "Jaqueta Nike Sportswear Club Fleece Feminina",
     categoria: "Nike-feminino-roupas",
@@ -768,12 +769,11 @@ let produtos = [
     desconto: 5,
     imagem: "https://imgnike-a.akamaihd.net/360x360/022904IEA1.jpg",
     imagensDetalhes: [
-	   "https://imgnike-a.akamaihd.net/360x360/022904IEA1.jpg",
+      "https://imgnike-a.akamaihd.net/360x360/022904IEA1.jpg",
       "https://imgnike-a.akamaihd.net/360x360/02290482A8.jpg",
-     
-     
     ],
-    descricao: "O moletom Club Fleece, universalmente amado por seu conforto e consistência, foi feito para todo mundo. Sempre macias e fabricadas com o nosso caimento solto, elas são um opção básica para impulsionar qualquer atividade. Este modelo com zíper inteiriço regula a cobertura rapidamente. Feche-o quando o vento estiver forte ou deixe-o aberto para mostrar as suas camisetas e tops favoritos.",
+    descricao:
+      "O moletom Club Fleece, universalmente amado por seu conforto e consistência, foi feito para todo mundo. Sempre macias e fabricadas com o nosso caimento solto, elas são um opção básica para impulsionar qualquer atividade. Este modelo com zíper inteiriço regula a cobertura rapidamente. Feche-o quando o vento estiver forte ou deixe-o aberto para mostrar as suas camisetas e tops favoritos.",
     tamanhos: ["P", "M", "G", "GG"],
     cores: [
       {
@@ -781,9 +781,9 @@ let produtos = [
         codigo: "#ffffff",
         imagens: [
           "https://imgnike-a.akamaihd.net/360x360/02290482A8.jpg",
-		  "https://imgnike-a.akamaihd.net/360x360/02290482A1.jpg",
-		 "https://imgnike-a.akamaihd.net/360x360/02290482A3.jpg", 
-		 "https://imgnike-a.akamaihd.net/360x360/02290482A6.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/02290482A1.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/02290482A3.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/02290482A6.jpg",
         ],
       },
       {
@@ -791,18 +791,13 @@ let produtos = [
         codigo: "#17802eff",
         imagens: [
           "https://imgnike-a.akamaihd.net/360x360/022904IEA1.jpg",
-		  "https://imgnike-a.akamaihd.net/360x360/022904IEA2.jpg",
-		  "https://imgnike-a.akamaihd.net/360x360/022904IEA3.jpg",
-		  "https://imgnike-a.akamaihd.net/360x360/022904IEA4.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/022904IEA2.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/022904IEA3.jpg",
+          "https://imgnike-a.akamaihd.net/360x360/022904IEA4.jpg",
         ],
       },
-     
     ],
   },
-
-
-
-
 
   {
     id: 13,
@@ -1799,6 +1794,12 @@ function configurarSubmenusMarcas() {
       produtosVisiveis = produtos.filter(
         (prd) => prd.categoria.toLowerCase() === filtro.toLowerCase()
       );
+
+      // Em telas menores, fecha o menu lateral de categorias
+      if (window.innerWidth <= 768) {
+        navCategorias.classList.remove("show");
+      }
+
       aplicarFiltrosEOrdenacao();
     });
   });
