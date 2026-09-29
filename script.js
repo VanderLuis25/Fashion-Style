@@ -256,9 +256,9 @@ let produtos = [
     preco: 180.49,
     precoOriginal: 399.99,
     desconto: 29,
-    imagem: "https://imgnike-a.akamaihd.net/360x360/013902IDA3.jpg",
+    imagem: "https://imgnike-a.akamaihd.net/360x360/013902IDA5.jpg",
     imagensDetalhes: [
-      "https://imgnike-a.akamaihd.net/360x360/013902IDA3.jpg",
+      "https://imgnike-a.akamaihd.net/360x360/013902IDA5.jpg",
       "https://imgnike-a.akamaihd.net/250x250/013902A1.jpg",
       "https://imgnike-a.akamaihd.net/360x360/01390217A2.jpg",
     ],
@@ -270,7 +270,6 @@ let produtos = [
         nome: "Preto",
         codigo: "#000000",
         imagens: [
-          "https://imgnike-a.akamaihd.net/360x360/013902IDA3.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA5.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA7.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA12.jpg",
@@ -311,9 +310,9 @@ let produtos = [
     preco: 379.49,
     precoOriginal: 399.99,
     desconto: 5,
-    imagem: "https://imgnike-a.akamaihd.net/360x360/012504IDA3.jpg",
+    imagem: "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
     imagensDetalhes: [
-      "https://imgnike-a.akamaihd.net/360x360/012504IDA3.jpg",
+     "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
       "https://imgnike-a.akamaihd.net/360x360/01250400A2.jpg",
     ],
     descricao:
@@ -324,7 +323,7 @@ let produtos = [
         nome: "Preto",
         codigo: "#000000",
         imagens: [
-          "https://imgnike-a.akamaihd.net/360x360/012504IDA3.jpg",
+       ,
           "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
           "https://imgnike-a.akamaihd.net/360x360/012504IDA5.jpg",
           "https://imgnike-a.akamaihd.net/360x360/012504IDA12.jpg",
