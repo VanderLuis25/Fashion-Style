@@ -124,8 +124,8 @@ let produtos = [
     imagem: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/647770b0957148d39564fbe178cf92f5_9366/Tenis_Ultraboost_5_Preto_ID8812_HM7.jpg",
     imagensDetalhes: [
       "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/647770b0957148d39564fbe178cf92f5_9366/Tenis_Ultraboost_5_Preto_ID8812_HM7.jpg",
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cdcf9c578cc3408fb9084bd1422ce956_9366/Tenis_Ultraboost_5_Cinza_JH9081_HM7.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b59f5f00ad7c4e4c864dc63375f7ccc6_9366/Tenis_Ultraboost_5_Branco_JQ6656_01_00_standard.jpg",
     ],
     descricao:
       "Tênis de corrida com tecnologia Boost para máximo amortecimento",
@@ -144,14 +144,18 @@ let produtos = [
         nome: "Branco",
         codigo: "#FFFFFF",
         imagens: [
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+          "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b59f5f00ad7c4e4c864dc63375f7ccc6_9366/Tenis_Ultraboost_5_Branco_JQ6656_01_00_standard.jpg",
+          "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/11d8afdf69ec4413b36c7c96c1970c0b_9366/Tenis_Ultraboost_5_Branco_JQ6656_05_standard.jpg",
+          "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f76c4e72e7ad4429b32a96aad301f9cf_9366/Tenis_Ultraboost_5_Branco_JQ6656_04_standard.jpg",
         ],
       },
       {
         nome: "Cinza",
         codigo: "#808080",
         imagens: [
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+          "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cdcf9c578cc3408fb9084bd1422ce956_9366/Tenis_Ultraboost_5_Cinza_JH9081_HM7.jpg",
+          "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/67a4f8ad7240446d96aaca1f14c088ba_9366/Tenis_Ultraboost_5_Cinza_JH9081_HM5.jpg",
+          "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/69b7781995804acbb6b3ecb2eb3c6a14_9366/Tenis_Ultraboost_5_Cinza_JH9081_HM9.jpg",
         ],
       },
     ],
