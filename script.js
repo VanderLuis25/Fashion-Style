@@ -975,16 +975,16 @@ let produtos = [
     nome: "Agasalho Nike Sportswear Infantil",
     categoria: "Nike-infanil-roupas",
     marca: "Nike",
-    genero: "Infantl",
+    genero: "Infantil",
     tipo: "Roupas",
     preco: 89.9,
     precoOriginal: null,
     desconto: null,
     imagem:
-      "https://imgnike-a.akamaihd.net/80x80/059495MUA1.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/059495MUA1.jpg",
     imagensDetalhes: [
-      "https://imgnike-a.akamaihd.net/80x80/059495MUA1.jpg",
-      "https://imgnike-a.akamaihd.net/80x80/05949517A1.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/059495MUA1.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/05949517A1.jpg",
       "https://imgnike-a.akamaihd.net/768x768/059495IDA2.jpg",
     ],
     descricao: "",
@@ -994,18 +994,16 @@ let produtos = [
         nome: "Azul Claro",
         codigo: "#fa50f1",
         imagens: [
-          "https://imgnike-a.akamaihd.net/80x80/059495MUA1.jpg",
-          "https://imgnike-a.akamaihd.net/80x80/059495MUA2.jpg",
-          "https://imgnike-a.akamaihd.net/80x80/059495MUA6.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/059495MUA1.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/059495MUA2.jpg",
         ],
       },
       {
         nome: "Azul Escuro",
         codigo: "#000080",
         imagens: [
-          "https://imgnike-a.akamaihd.net/80x80/05949517A1.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/05949517A1.jpg",
           "https://imgnike-a.akamaihd.net/768x768/05949517A2.jpg",
-          "https://imgnike-a.akamaihd.net/80x80/05949517A6.jpg",
         ],
       },
       {
@@ -1013,8 +1011,8 @@ let produtos = [
         codigo: "#000000",
         imagens: [
           "https://imgnike-a.akamaihd.net/768x768/059495IDA2.jpg",
-          "https://imgnike-a.akamaihd.net/80x80/059495IDA3.jpg",
-          "https://imgnike-a.akamaihd.net/768x768/059495IDA6.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/059495IDA3.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/059495IDA8.jpg",
         ],
       },
     ],
