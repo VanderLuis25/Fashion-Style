@@ -1169,10 +1169,9 @@ export let produtos = [
       },
     ],
   },
-  //Infantil//
   {
     id: 29,
-    nome: "Tênis Infantil Nike",
+    nome: "Tênis Nike Court Legacy Next Nature Feminino",
     categoria: "nike-infantil-calcados",
     marca: "Nike",
     genero: "Infantil",
