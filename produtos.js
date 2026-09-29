@@ -257,8 +257,7 @@ export let produtos = [
         nome: "Preto",
         codigo: "#000000",
         imagens: [
-          
-          ,
+          "https://imgnike-a.akamaihd.net/360x360/013902IDA5.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA7.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA12.jpg",
           "https://imgnike-a.akamaihd.net/360x360/013902IDA2.jpg",
