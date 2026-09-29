@@ -121,10 +121,10 @@ let produtos = [
     preco: 299.9,
     precoOriginal: 399.9,
     desconto: 25,
-    imagem: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/59f3f8b61fb146dabf3a48566e6c7fd9_9366/Tenis_Ultraboost_5_Azul_ID8817_HM3_hover.jpg",
+    imagem: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/647770b0957148d39564fbe178cf92f5_9366/Tenis_Ultraboost_5_Preto_ID8812_HM7.jpg",
     imagensDetalhes: [
-      "",
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/59f3f8b61fb146dabf3a48566e6c7fd9_9366/Tenis_Ultraboost_5_Azul_ID8817_HM3_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/647770b0957148d39564fbe178cf92f5_9366/Tenis_Ultraboost_5_Preto_ID8812_HM7.jpg",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400",
       "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400",
     ],
     descricao:
@@ -135,7 +135,9 @@ let produtos = [
         nome: "Preto",
         codigo: "#000000",
         imagens: [
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+          "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/eef3c12bdae04785a92cc59d0841cf34_9366/Tenis_Ultraboost_5_Preto_ID8812_HM3_hover.jpg",
+          "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/1b4cd393087f4818b6129cc32f88956a_9366/Tenis_Ultraboost_5_Preto_ID8812_HM6.jpg",
+          "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b608c041f29f45a7b1034b9cfc9c08f4_9366/Tenis_Ultraboost_5_Preto_ID8812_HM8.jpg",
         ],
       },
       {
@@ -312,7 +314,7 @@ let produtos = [
     desconto: 5,
     imagem: "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
     imagensDetalhes: [
-     "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
+      "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
       "https://imgnike-a.akamaihd.net/360x360/01250400A2.jpg",
     ],
     descricao:
@@ -323,7 +325,7 @@ let produtos = [
         nome: "Preto",
         codigo: "#000000",
         imagens: [
-       ,
+          ,
           "https://imgnike-a.akamaihd.net/360x360/012504IDA4.jpg",
           "https://imgnike-a.akamaihd.net/360x360/012504IDA5.jpg",
           "https://imgnike-a.akamaihd.net/360x360/012504IDA12.jpg",
@@ -1287,30 +1289,25 @@ function renderizarCarrinho() {
       <img src="${produto.imagem}" alt="${produto.nome}">
       <div class="info">
         <span class="nome-item">${produto.nome}</span>
-        ${
-          produto.tamanho
-            ? `<span class="detalhe-item">Tamanho: ${produto.tamanho}</span>`
-            : ""
-        }
-        ${
-          produto.cor
-            ? `<span class="detalhe-item">Cor: ${produto.cor.nome}</span>`
-            : ""
-        }
+        ${produto.tamanho
+        ? `<span class="detalhe-item">Tamanho: ${produto.tamanho}</span>`
+        : ""
+      }
+        ${produto.cor
+        ? `<span class="detalhe-item">Cor: ${produto.cor.nome}</span>`
+        : ""
+      }
         <span class="preco-item">${formatarMoeda(produto.preco)}</span>
       </div>
       <div class="quantidade-controle">
-        <button onclick="mudarQuantidade(${produto.id}, -1, '${
-      produto.tamanho
-    }', '${produto.cor?.nome}')">-</button>
+        <button onclick="mudarQuantidade(${produto.id}, -1, '${produto.tamanho
+      }', '${produto.cor?.nome}')">-</button>
         <span>${produto.quantidade}</span>
-        <button onclick="mudarQuantidade(${produto.id}, 1, '${
-      produto.tamanho
-    }', '${produto.cor?.nome}')">+</button>
+        <button onclick="mudarQuantidade(${produto.id}, 1, '${produto.tamanho
+      }', '${produto.cor?.nome}')">+</button>
       </div>
-      <button class="remover-item" onclick="removerItem(${produto.id}, '${
-      produto.tamanho
-    }', '${produto.cor?.nome}')">
+      <button class="remover-item" onclick="removerItem(${produto.id}, '${produto.tamanho
+      }', '${produto.cor?.nome}')">
         <i class="fa-solid fa-trash-can"></i>
       </button>
     `;
@@ -1401,8 +1398,8 @@ function mostrarProdutos(listaProdutos, mostrarOriginal = false) {
         const precoAtual = prd.precoOriginal * (1 - prd.desconto / 100);
         precoHtml = `
           <span class="preco-original">${formatarMoeda(
-            prd.precoOriginal
-          )}</span>
+          prd.precoOriginal
+        )}</span>
           <span class="preco-atual">${formatarMoeda(precoAtual)}</span>
         `;
       } else {
@@ -1425,21 +1422,21 @@ function mostrarProdutos(listaProdutos, mostrarOriginal = false) {
       // Gerar seletores de tamanho
       const tamanhosHtml = prd.tamanhos
         ? prd.tamanhos
-            .map(
-              (tamanho) =>
-                `<span class="tamanho-option" onclick="selecionarTamanho(${prd.id}, '${tamanho}')">${tamanho}</span>`
-            )
-            .join("")
+          .map(
+            (tamanho) =>
+              `<span class="tamanho-option" onclick="selecionarTamanho(${prd.id}, '${tamanho}')">${tamanho}</span>`
+          )
+          .join("")
         : "";
 
       // Gerar seletores de cor
       const coresHtml = prd.cores
         ? prd.cores
-            .map(
-              (cor) =>
-                `<span class="cor-option" onclick="selecionarCor(${prd.id}, '${cor.nome}', '${cor.codigo}')" style="--cor-produto: ${cor.codigo}" data-imagem="${cor.imagens[0]}"></span>`
-            )
-            .join("")
+          .map(
+            (cor) =>
+              `<span class="cor-option" onclick="selecionarCor(${prd.id}, '${cor.nome}', '${cor.codigo}')" style="--cor-produto: ${cor.codigo}" data-imagem="${cor.imagens[0]}"></span>`
+          )
+          .join("")
         : "";
 
       htmlProdutos += `
@@ -2105,32 +2102,30 @@ function verDetalhes(idProduto) {
     <div class="seletor-tamanho">
       <label>Tamanho:</label>
       <div class="tamanhos-container">
-        ${
-          produto.tamanhos
-            ? produto.tamanhos
-                .map(
-                  (tamanho) =>
-                    `<span class="tamanho-option" onclick="selecionarTamanhoModal(${produto.id}, '${tamanho}')">${tamanho}</span>`
-                )
-                .join("")
-            : ""
-        }
+        ${produto.tamanhos
+      ? produto.tamanhos
+        .map(
+          (tamanho) =>
+            `<span class="tamanho-option" onclick="selecionarTamanhoModal(${produto.id}, '${tamanho}')">${tamanho}</span>`
+        )
+        .join("")
+      : ""
+    }
       </div>
     </div>
     
     <div class="seletor-cor">
       <label>Cor:</label>
       <div class="cores-container">
-        ${
-          produto.cores
-            ? produto.cores
-                .map(
-                  (cor) =>
-                    `<span class="cor-option" onclick="selecionarCorModal(${produto.id}, '${cor.nome}', '${cor.codigo}')" style="--cor-produto: ${cor.codigo}" data-imagem="${cor.imagens[0]}"></span>`
-                )
-                .join("")
-            : ""
-        }
+        ${produto.cores
+      ? produto.cores
+        .map(
+          (cor) =>
+            `<span class="cor-option" onclick="selecionarCorModal(${produto.id}, '${cor.nome}', '${cor.codigo}')" style="--cor-produto: ${cor.codigo}" data-imagem="${cor.imagens[0]}"></span>`
+        )
+        .join("")
+      : ""
+    }
       </div>
     </div>
   `;
