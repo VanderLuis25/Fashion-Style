@@ -950,49 +950,7 @@ export let produtos = [
       },
     ],
   },
-  {
-    id: 6,
-    nome: "Calça Uniqlo Jeans",
-    categoria: "uniqlo-masculino-roupas",
-    marca: "Uniqlo",
-    genero: "Masculino",
-    tipo: "Roupas",
-    preco: 89.9,
-    precoOriginal: null,
-    desconto: null,
-    imagem:
-      "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400",
-    imagensDetalhes: [
-      "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400",
-      "https://images.unsplash.com/photo-1506629905607-1b1b1b1b1b1b?w=400",
-      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400",
-    ],
-    descricao: "Calça jeans clássica com corte moderno e confortável",
-    tamanhos: ["38", "40", "42", "44", "46"],
-    cores: [
-      {
-        nome: "Azul Claro",
-        codigo: "#87CEEB",
-        imagens: [
-          "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400",
-        ],
-      },
-      {
-        nome: "Azul Escuro",
-        codigo: "#000080",
-        imagens: [
-          "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400",
-        ],
-      },
-      {
-        nome: "Preto",
-        codigo: "#000000",
-        imagens: [
-          "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=400",
-        ],
-      },
-    ],
-  },
+  
   {
     id: 7,
     nome: "Sandália Nike Feminina",
@@ -1126,49 +1084,7 @@ export let produtos = [
       },
     ],
   },
-  {
-    id: 10,
-    nome: "Conjunto Pijama Uniqlo",
-    categoria: "uniqlo-infantil-roupas",
-    marca: "Uniqlo",
-    genero: "Infantil",
-    tipo: "Roupas",
-    preco: 59.9,
-    precoOriginal: 79.9,
-    desconto: 25,
-    imagem:
-      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
-    imagensDetalhes: [
-      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
-    ],
-    descricao: "Conjunto de pijama infantil macio e confortável",
-    tamanhos: ["2-3 anos", "4-5 anos", "6-7 anos", "8-9 anos"],
-    cores: [
-      {
-        nome: "Azul",
-        codigo: "#0000FF",
-        imagens: [
-          "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
-        ],
-      },
-      {
-        nome: "Rosa",
-        codigo: "#FFB6C1",
-        imagens: [
-          "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
-        ],
-      },
-      {
-        nome: "Verde",
-        codigo: "#00FF00",
-        imagens: [
-          "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
-        ],
-      },
-    ],
-  },
+ 
   {
     id: 29,
     nome: "Tênis Nike Court Legacy Next Nature Feminino",
