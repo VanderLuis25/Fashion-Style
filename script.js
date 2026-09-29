@@ -1106,7 +1106,7 @@ let produtos = [
   },
   {
     id: 9,
-    nome: "Tênis Infantil Nike-Masculino",
+    nome: "Tênis Infantil Nike",
     categoria: "nike-infantil-calcados",
     marca: "Nike",
     genero: "Infantil",
