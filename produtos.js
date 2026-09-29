@@ -1088,34 +1088,40 @@ export let produtos = [
     preco: 89.9,
     precoOriginal: 119.9,
     desconto: 25,
-    imagem: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+    imagem: "https://imgnike-a.akamaihd.net/768x768/026609IDA2.jpg",
     imagensDetalhes: [
-      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+      "https://imgnike-a.akamaihd.net/768x768/026609IDA2.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/0266095BA2.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/026609X7A1.jpg",
     ],
     descricao: "Tênis infantil colorido e confortável para brincadeiras",
     tamanhos: ["28", "30", "32", "34", "36"],
     cores: [
       {
-        nome: "Azul",
-        codigo: "#0000FF",
+        nome: "Preto",
+        codigo: "#080808",
         imagens: [
-          "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+          "https://imgnike-a.akamaihd.net/768x768/026609IDA2.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/026609IDA5.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/026609IDA6.jpg",
         ],
       },
       {
-        nome: "Rosa",
-        codigo: "#FFB6C1",
+        nome: "Branco",
+        codigo: "#ffffff",
         imagens: [
-          "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+          "https://imgnike-a.akamaihd.net/768x768/0266095BA2.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/0266095BA5.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/0266095BA6.jpg",
         ],
       },
       {
         nome: "Verde",
-        codigo: "#00FF00",
+        codigo: "#14f10c",
         imagens: [
-          "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+          "https://imgnike-a.akamaihd.net/768x768/026609X7A1.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/026609X7A4.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/026609X7A5.jpg",
         ],
       },
     ],
@@ -1161,6 +1167,47 @@ export let produtos = [
           "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400",
         ],
       },
+    ],
+  },
+  //Infantil//
+  {
+    id: 29,
+    nome: "Tênis Infantil Nike",
+    categoria: "nike-infantil-calcados",
+    marca: "Nike",
+    genero: "Infantil",
+    tipo: "Calçados",
+    preco: 89.9,
+    precoOriginal: 119.9,
+    desconto: 25,
+    imagem: "https://imgnike-a.akamaihd.net/768x768/01371959A2.jpg",
+    imagensDetalhes: [
+      "https://imgnike-a.akamaihd.net/768x768/01371959A2.jpg",
+      "https://imgnike-a.akamaihd.net/768x768/01371952A2.jpg",
+
+    ],
+    descricao: "Tênis infantil colorido e confortável para brincadeiras",
+    tamanhos: ["28", "30", "32", "34", "36"],
+    cores: [
+      {
+        nome: "Preto",
+        codigo: "#ec4fb8",
+        imagens: [
+          "https://imgnike-a.akamaihd.net/768x768/01371959A2.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/01371959A5.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/01371959A6.jpg",
+        ],
+      },
+      {
+        nome: "Branco",
+        codigo: "#ffffff",
+        imagens: [
+          "https://imgnike-a.akamaihd.net/768x768/01371952A2.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/01371952A6.jpg",
+          "https://imgnike-a.akamaihd.net/768x768/01371952A7.jpg",
+        ],
+      },
+
     ],
   },
 ];
