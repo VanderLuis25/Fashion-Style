@@ -121,10 +121,10 @@ let produtos = [
     preco: 299.9,
     precoOriginal: 399.9,
     desconto: 25,
-    imagem: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    imagem: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/59f3f8b61fb146dabf3a48566e6c7fd9_9366/Tenis_Ultraboost_5_Azul_ID8817_HM3_hover.jpg",
     imagensDetalhes: [
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400",
+      "",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/59f3f8b61fb146dabf3a48566e6c7fd9_9366/Tenis_Ultraboost_5_Azul_ID8817_HM3_hover.jpg",
       "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400",
     ],
     descricao:
